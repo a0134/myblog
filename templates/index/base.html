@@ -120,13 +120,21 @@
 {#底部信息#}
 <div class="card p-0 mt-2">
     <div class="card-body text-center">
-        <a href="http://beian.miit.gov.cn/" class="text-decoration-none text-dark d-block" target="_blank">豫ICP备2022015615号-1</a>
-        <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank"
-           class="text-decoration-none text-dark d-block">
-            本网站由
-            <img alt="upyun-logo" src="https://s.nmxc.ltd/sakurairo_vision/@2.5/options/upyun_logo.webp"
-                 class="align-text-top" style="height: 25px;width: auto">
-            提供 CDN 加速 / 云存储 服务</a>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 col-12"><a href="http://beian.miit.gov.cn/"
+                                                        class="text-decoration-none text-dark" target="_blank">豫ICP备2022015615号-1</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 offset-md-4 col-12">
+                <a href="https://www.upyun.com/?utm_source=lianmeng&amp;utm_medium=referral" target="_blank"
+                   class="text-decoration-none text-dark">
+                    本网站由
+                    <img alt="upyun-logo" src="https://s.nmxc.ltd/sakurairo_vision/@2.5/options/upyun_logo.webp"
+                         class="align-text-top" style="height: 25px;width: auto">
+                    提供 CDN 加速 / 云存储 服务</a>
+            </div>
+        </div>
         <div>本站已运行：
             <span id="t_d"></span>
             <span id="t_h"></span>
@@ -135,6 +143,7 @@
         </div>
     </div>
 </div>
+
 <div title="回到顶部" class="top"></div>
 <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
