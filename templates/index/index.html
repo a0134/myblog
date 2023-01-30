@@ -1,0 +1,39 @@
+{% extends 'index/base.html' %}
+{% block title %}首页{% endblock %}
+{% block banner %}
+    <div class="banner d-flex justify-content-center align-items-center vh-100">
+        <div class="container-box text-white text-center">
+            <h1 class="title">夜空繁星</h1>
+            <div class="text">
+                人本身可以是聚光灯，我自己可以就是发光体。
+            </div>
+            <div class="row mt-4">
+                <div class="col-4"><a href="#" class="text-white" title="github"><i class="bi bi-github align-middle"
+                                                                                    style="font-size: 20px;"></i></a>
+                </div>
+                <div class="col-4"><a href="#" class="text-white" title="QQ"><i class="bi bi-tencent-qq align-middle"
+                                                                                style="font-size: 20px;"></i></a></div>
+                <div class="col-4"><a href="#" class="text-white" title="E-mail"><i class="bi bi-envelope align-middle"
+                                                                                    style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="down" onclick="$('#cont')[0].scrollIntoView();"><i class="bi bi-chevron-double-down"></i></a>
+    </div>{% endblock %}
+{% block containerLeft %}
+<div class="card mb-3 shadow-sm cardImgOffset">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <a href="#" class="rounded-sm d-block overflow-hidden h-100"><img
+                    src="img/background/wallhaven-dpqjwj.jpg" alt="..."
+                    class="img-fluid h-100 rounded-sm cardImg"></a>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>{% endblock %}
