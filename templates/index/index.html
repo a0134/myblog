@@ -1,8 +1,8 @@
-{% extends 'index/base.html' %}
+{% extends 'index/base/index_base.html' %}
 {% block title %}首页{% endblock %}
 {% block banner %}
     <div class="banner d-flex justify-content-center align-items-center vh-100">
-        <div class="container-box text-white text-center">
+        <div class="container-box text-white text-center layui-anim layui-anim-upbit">
             <h1 class="title">夜空繁星</h1>
             <div class="text">
                 人本身可以是聚光灯，我自己可以就是发光体。
@@ -22,7 +22,7 @@
     </div>{% endblock %}
 {% block containerLeft %}
 <div class="card mb-3 shadow-sm cardImgOffset">
-    <div class="row no-gutters">
+    <div class="row no-gutters layui-anim layui-anim-upbit">
         <div class="col-md-4">
             <a href="#" class="rounded-sm d-block overflow-hidden h-100"><img
                     src="img/background/wallhaven-dpqjwj.jpg" alt="..."
@@ -30,7 +30,7 @@
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h3 class="card-title"><a href="#" class="text-decoration-none p-1">OpenWRT 获取在线设备</a></h3>
                 <p class="card-text">This is a wider card with supporting text below</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
