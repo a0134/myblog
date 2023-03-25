@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import os
 
 app = Flask(__name__, static_url_path="/")
 
@@ -19,4 +20,4 @@ def login():
 
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=80, debug=True)
+    app.run(host="0.0.0.0", port=os.getenv("PORT", default=5000), debug=True)
